@@ -26,6 +26,13 @@
                           {{ task.description }}
                         </p>
                     </div>
+
+                    <input 
+                      type="text" 
+                      class="block p-2 bg-transparent w-full"
+                      placeholder="+ Enter a new task"
+                      @keyup.enter="createTask($event, column.tasks)"
+                    >
                 </div>
             </div>
 
@@ -55,12 +62,20 @@ export default {
     },
 
     methods: {
-      goToTask (task) {
+      goToTask (task){
         this.$router.push({ name: 'task', params: { id: task.id }})
       },
 
       close () {
         this.$router.push({ name: 'board' })
+      },
+
+      createTask(e, tasks) {
+        this.$store.commit('CREATE_TASK', { 
+          tasks, 
+          name: e.target.value 
+        })
+        e.target.value = '';
       }
     }
 };
