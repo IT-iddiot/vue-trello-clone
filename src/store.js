@@ -40,6 +40,25 @@ export default new Vuex.Store({
 
     UPDATE_TASK (state, { task, key, value }) {
       task[key] = value;
+    },
+
+    MOVE_TASK (state, { fromTasks, fromTaskIndex, toTasks, toTaskIndex }) {
+      const taskToMove = fromTasks.splice(fromTaskIndex, 1)[0];
+      toTasks.splice(toTaskIndex, 0, taskToMove);
+    },
+
+    CREATE_COLUMN (state, { name }) {
+      state.board.columns.push({
+        name,
+        tasks: []
+      })
+    },
+
+    //* Column Reorder
+    MOVE_COLUMN (state, { fromColumn, toColumnIndex }) {
+      const columnList = state.board.columns;
+      const columnToMove = columnList.splice(fromColumn, 1)[0]; // remove old
+      columnList.splice(toColumnIndex, 0, columnToMove); // add new
     }
   }
 })

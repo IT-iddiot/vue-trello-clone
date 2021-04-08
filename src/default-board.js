@@ -8,19 +8,19 @@ export default {
       tasks: [
         {
           description: '',
-          name: 'first task',
+          name: 'todo - first task',
           id: '89647cb2dc8ed',
           userAssigned: null
         },
         {
           description: '',
-          name: 'second task',
+          name: 'todo - second task',
           id: uuid(),
           userAssigned: null
         },
         {
           description: '',
-          name: 'and thrid',
+          name: 'todo - cincai task',
           id: uuid(),
           userAssigned: null
         }
@@ -31,10 +31,22 @@ export default {
       tasks: [
         {
           description: '',
-          name: 'first task',
+          name: 'in progress - first task',
           id: uuid(),
           userAssigned: null
-        }
+        },
+        {
+          description: '',
+          name: 'in progress - second task',
+          id: uuid(),
+          userAssigned: null
+        },
+        {
+          description: '',
+          name: 'in progress - third task',
+          id: uuid(),
+          userAssigned: null
+        },
       ]
     },
     {
@@ -42,10 +54,16 @@ export default {
       tasks: [
         {
           description: '',
-          name: 'first task',
+          name: 'done - first task',
           id: uuid(),
           userAssigned: null
-        }
+        },
+        {
+          description: '',
+          name: 'done - second task',
+          id: uuid(),
+          userAssigned: null
+        },
       ]
     }
   ]

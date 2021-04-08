@@ -1,39 +1,21 @@
 <template>
     <div class="board">
         <div class="flex flex-row items-start">
-            <div
-                class="column"
-                v-for="(column, $columnIndex) of board.columns"
-                :key="$columnIndex"
-            >
-                <div class="flex items-center mb-2 font-bold">
-                    {{ column.name }}
-                </div>
-                <div class="list-reset">
-                    <div 
-                      class="task" 
-                      v-for="(task, $taskIndex) of column.tasks" 
-                      :key="$taskIndex"
-                      @click="goToTask(task)"
-                    >
-                        <span class="w-full flex-no-shrink font-bold">
-                          {{ task.name }}
-                        </span>
-                        <p 
-                          v-if="task.description"
-                          class="w-full flex-no-shrink mt-1"
-                        >
-                          {{ task.description }}
-                        </p>
-                    </div>
+            <BoardColumn 
+              v-for="(column, $columnIndex) of board.columns"
+              :key="$columnIndex"
+              :column="column"
+              :column-index="$columnIndex"
+            />
 
-                    <input 
-                      type="text" 
-                      class="block p-2 bg-transparent w-full"
-                      placeholder="+ Enter a new task"
-                      @keyup.enter="createTask($event, column.tasks)"
-                    >
-                </div>
+            <div class="column flex">
+              <input 
+                type="text"
+                class="p-2 m-2 flex-grow"
+                placeholder="New Column Name" 
+                v-model="newColumnName"
+                @keyup.enter="createColumn"
+              >
             </div>
 
             <div 
@@ -51,8 +33,19 @@
 
 <script>
 import { mapState } from "vuex";
+import BoardColumn from '@/components/BoardColumn';
 
 export default {
+    components: {
+        BoardColumn
+    },
+
+    data() {
+      return {
+        newColumnName: null
+      }
+    },
+
     computed: {
       ...mapState(["board"]),
 
@@ -62,21 +55,16 @@ export default {
     },
 
     methods: {
-      goToTask (task){
-        this.$router.push({ name: 'task', params: { id: task.id }})
-      },
 
       close () {
         this.$router.push({ name: 'board' })
       },
 
-      createTask(e, tasks) {
-        this.$store.commit('CREATE_TASK', { 
-          tasks, 
-          name: e.target.value 
-        })
-        e.target.value = '';
-      }
+      createColumn() {
+        this.$store.commit('CREATE_COLUMN', { 
+          name: this.newColumnName 
+        });
+      },
     }
 };
 </script>
