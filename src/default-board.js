@@ -7,45 +7,153 @@ export default {
       name: 'todo',
       tasks: [
         {
-          description: '',
           name: 'todo - first task',
           id: '89647cb2dc8ed',
-          userAssigned: null
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
         },
         {
-          description: '',
           name: 'todo - second task',
           id: uuid(),
-          userAssigned: null
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
         },
         {
-          description: '',
-          name: 'todo - cincai task',
+          name: 'todo - task',
           id: uuid(),
-          userAssigned: null
-        }
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'todo - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
       ]
     },
     {
       name: 'in-progress',
       tasks: [
         {
-          description: '',
-          name: 'in progress - first task',
+          name: 'in progress - task',
           id: uuid(),
-          userAssigned: null
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
         },
         {
-          description: '',
-          name: 'in progress - second task',
+          name: 'in progress - task',
           id: uuid(),
-          userAssigned: null
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
         },
         {
-          description: '',
-          name: 'in progress - third task',
+          name: 'in progress - task',
           id: uuid(),
-          userAssigned: null
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'in progress - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'in progress - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'in progress - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'in progress - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
+        },
+        {
+          name: 'in progress - task',
+          id: uuid(),
+          userAssigned: null,
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, saepe!',
         },
       ]
     },
